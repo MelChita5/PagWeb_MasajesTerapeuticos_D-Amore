@@ -1,0 +1,176 @@
+/* Primero hacer el modelo para celular */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 75px 40px 1fr 130px ;
+    grid-template-areas:
+        "zh"
+        "zn"
+        "zs"
+        "zf"
+        
+}
+header {
+    grid-area: zh;
+    background-color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > img {
+    height: 60px;
+    margin-top: 10px;
+}
+nav {
+    grid-area: zn;
+    background-color: #ede7dc;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px rgba(150, 150, 150, 0.312);
+    box-shadow: 1px 3px 10px  rgba(203, 203, 203, 0.725);
+}
+
+section {
+    grid-area: zs;
+    background-color:  white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section > div   {
+    width: 95%;
+    height: 600px;
+    margin: 20px;
+    box-shadow: 1px 3px 10px  rgb(111, 111, 111);
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+section > div:hover {
+    box-shadow: 10px 10px 20px 5px rgba(20, 20, 20, 0.3);
+    transform: translateY(-2%);
+}
+.contenedorImg{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.contenedorImg > img {
+    width: 100%;
+    box-shadow: 10px 10px 20px 0px rgba(148, 148, 148, 0.3);
+}
+.contenedorDatos{
+    width: 100%;
+    /* background-color: rgb(200, 200, 200); */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.nomrbeMasaje {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.precio{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    margin: 20px;
+}
+.precio1, .rpecio2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.descripcion{
+    width: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    color: rgb(43, 43, 43);
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+footer {
+    grid-area: zf;
+    background-color: #ede7dc;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: column;
+}
+.contactanos{
+    padding-left: 30px;
+    margin-top: 15px;
+}
+.contacto{
+    padding-left: 30px;
+    margin-top: 10px;
+}
+.copy{
+    padding-left: 30px;
+    margin-top: 30px;
+    color: rgb(99, 99, 99);
+}
+
+@media screen and (min-width:550px){
+    section > div {
+        height: 670px;
+    }
+}
+
+
+@media screen and (min-width:700px) {
+    section > div {
+        width: 40%;
+        height: 580px;
+    }
+    
+}
+
+@media screen and (min-width:1240px) {
+    
+    section > div {
+        width: 30%;
+        height: 580px;
+    }
+    
+} 
+
