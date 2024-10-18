@@ -95,16 +95,16 @@ section > div:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: "Open Sans", sans-serif;
 }
 .precio{
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center; 
-    margin: 20px;
+    margin: 15px;
 }
 .precio1, .rpecio2{
     display: flex;
@@ -112,7 +112,7 @@ section > div:hover {
     align-content: center;
     margin: 5px 0;
     font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .descripcion{
@@ -123,7 +123,7 @@ section > div:hover {
     color: rgb(43, 43, 43);
     text-align: center;
     font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 
